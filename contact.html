@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <head>
+        <title>Library Management System</title>
+        <meta charset="UTF-8">  
+        <meta name="viewport" charset="width=device-width, initial-scale=0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>    
+    <body>
+        <div class="content">
+        <div class="navbar">
+            <div class="logo">
+                <a href="homepage.html">LMS</a>
+            </div>
+
+            <nav>
+                  <ul id="MenuItems">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signin.html">Signin</a></li>
+					<li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+        <!-----------------------------Contact---------------------------------->
+		
+		<div class="featured">
+		<div class="contact">
+			<div class="row">
+				<div class="col-3">
+					<h1>Contact Us</h1> 
+            <span>
+            <h2>Lapaz Road,Fidelity Bank</h2>
+            <p>Fadama,Fadama Junction,IN</p>
+            </span>
+            
+            <span>
+            <h2>+233245260660</h2>
+            <p>Monday-Sunday,10am-5pm</p>
+            </span>
+            
+            <span>
+            <h2>komlaagbessitse@gmail.com</h2>
+            <p>Email me your query</p>
+            </span>
+			
+			<span>
+			<h2>Follow Us</h2>
+			<a href=""><i class="fa fa-facebook"></i></a>
+			<a href=""><i class="fa fa-whatsapp"></i></a>
+			<a href=""><i class="fa fa-instagram"></i></a>
+			<a href=""><i class="fa fa-linkedin"></i></a>
+			</span>
+				</div>
+				
+				<div class="col-3">
+					<form action="" method="">
+						<input type="text" placeholder="Please enter your name" required>
+						<input type="email" placeholder="Please enter your email address" required>
+						<input type="text" placeholder="Please enter your subject" required>
+						<textarea rows="8" placeholder="Please enter your message" required></textarea>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+				</div>
+
+
+        </div>
+        </div>
+        </div>
+        </div>
+		<!--------------footer-------------------- -->
+		<div class="footer">
+		<div class="copyright">
+		<h3>Copyright 2025</h3>
+		</div>
+		</div>
+
+        <script>
+         var MenuItems = document.getElementById("MenuItems");
+
+         MenuItems.style.maxHeight = "0px";
+
+         function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+         {
+            MenuItems.style.maxHeight = "200px";
+         }
+         else{
+            MenuItems.style.maxHeight = "0px";
+         }
+         }
+    </script>
+
+    </body>
+</html>

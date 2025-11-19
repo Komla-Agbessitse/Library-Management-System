@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+		<title>Library Management System</title>
+        <meta charset="UTF-8">  
+        <meta name="viewport" charset="width=device-width, initial-scale=0">
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>    
+    <body>
+		<div class="content">
+        <div class="navbar">
+            <div class="logo">
+                <a href="homepage.html">LMS</a>
+            </div>
+
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signin.html">Signin</a></li>
+					<li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+			<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+        <!-----------------------------SignUp---------------------------------->
+		<div class="featured">
+		<div class="signup">
+		<div class="auth">
+		<form action="signin.html" method="post">
+						
+						<h2 class="form-title">Signup</h2>
+						<div>
+						<label>Username</label>
+						<input type="Username" name="Please enter your Username" required>
+						</div>
+						
+						<div>
+						<label>Email</label>
+						<input type="email" name=" email address" required>
+						</div>
+						
+						<div>
+						<label>Password</label>
+						<input type="Password" name="Please enter your Password" required>
+						</div>
+						
+						<div>
+						<label>Password Confirmation</label>
+						<input type="Password" name="Please enter your Password" required>
+						</div>
+						
+						<div>
+						<button type="submit" class="btn">SignUp</button>
+						</div>
+						
+						<p><a href="signin.html">SignIn</a><p>
+							
+
+					</form>
+		</div>
+		</div>
+		</div>	
+		</div>
+		<!--------------footer-------------------- -->
+		<div class="footer">
+		<div class="copyright">
+		<h3>Copyright 2024</h3>
+		</div>
+		</div>
+
+		<script>
+         var MenuItems = document.getElementById("MenuItems");
+
+         MenuItems.style.maxHeight = "0px";
+
+         function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+         {
+            MenuItems.style.maxHeight = "200px";
+         }
+         else{
+            MenuItems.style.maxHeight = "0px";
+         }
+         }
+    </script>
+
+    </body>
+</html>

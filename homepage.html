@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+    <head>
+        <title>Library Management System</title>
+        <meta charset="UTF-8">  
+        <meta name="viewport" charset="width=device-width, initial-scale=0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>    
+    <body>
+        <div class="content">
+        <div class="navbar">
+            <div class="logo">
+                <a href="homepage.html">LMS</a>
+            </div>
+
+            <nav>
+                  <ul id="MenuItems">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signin.html">Signin</a></li>
+					<li><a href="admin.html">Admin</a></li>
+                    
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+        <!-----------------------------Overview---------------------------------->
+
+		<div class="grids">
+		<div class="col-2">	
+        <div class="table">  
+			<table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Availability</th>
+                    </tr>
+
+                    <tr>
+                        <td>The Great Gatsby</td>
+                        <td>F. Scott Fitzgerald</td>
+                        <td>5</td>
+                    </tr>
+
+                    <tr>
+                        <td>Becoming</td>
+                        <td>Michelle Obama</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Atomic Habits</td>
+                        <td>James Clear</td>
+                        <td>7</td>
+                    </tr>
+            </table>
+							
+		</div>
+        </div>
+		
+        <div class="col-2">
+		
+					<div class="search-box">
+					<img src="images/search.png">
+					<form action="index.html" method="post">
+					<input type="search" id="input" placeholder="Search by book, author or category..." class="search-text" oninput="inputV()">
+					</form>
+					</div>
+				
+                    <div class="searching">
+					<div class="books">	
+					<h1>Books</h1>
+					<p><a href="">The Great Gatsby</a></p>
+					<p><a href="">Becoming</a></p>
+					<p><a href="">Atomic Habits</a></p>
+					</div>
+
+                    <div class="authors">	
+					<h1>Authors</h1>
+					<p><a href="">F. Scott Fitzgerald</a></p>
+					<p><a href="">Michelle Obama</a></p>
+					<p><a href="">James Clear</a></p>
+					</div>
+
+                    <div class="category">	
+					<h1>Categories</h1>
+					<p><a href="">Technology</a></p>
+					<p><a href="">Arts</a></p>
+					<p><a href="">Music</a></p>
+					<p><a href="">Arts</a></p>
+					<p><a href="">Music</a></p>
+					</div>
+                    </div>
+		</div>
+
+
+        </div>
+        </div>
+        
+		<!--------------footer-------------------- -->
+		<div class="footer">
+		<div class="copyright">
+		<h3>Copyright 2025</h3>
+		</div>
+		</div>
+
+       <script>
+    function inputV() {
+    let filter = document.getElementById("input").value.toLowerCase();
+
+    let items = document.querySelectorAll(".searching p");
+
+    items.forEach(item => {
+        let text = item.textContent.toLowerCase();
+
+        if (text.includes(filter)) {
+            item.style.display = "";
+        } else {
+            item.style.display = "none";
+        }
+    });
+    }
+    </script>
+
+    <script>
+         var MenuItems = document.getElementById("MenuItems");
+
+         MenuItems.style.maxHeight = "0px";
+
+         function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+         {
+            MenuItems.style.maxHeight = "200px";
+         }
+         else{
+            MenuItems.style.maxHeight = "0px";
+         }
+         }
+    </script>
+
+    <script>
+         var MenuItems = document.getElementById("MenuItems");
+
+         MenuItems.style.maxHeight = "0px";
+
+         function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+         {
+            MenuItems.style.maxHeight = "200px";
+         }
+         else{
+            MenuItems.style.maxHeight = "0px";
+         }
+         }
+    </script>
+
+
+    </body>
+</html>
